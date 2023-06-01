@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+ .navbar {
+    display: flex;
+    font-size: x-large;
+} 
+
+.logo {
+    height: 60px;
+    font-size: 50px;
+    color: rgb(2, 255, 90);
+    font-style: oblique;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
+
+
+li {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 30px;
+    text-align: end;
+    color:rgb(214, 229, 214);
+    cursor: pointer;
+}

@@ -7,10 +7,12 @@ const Navbar = () => {
     return(
         <nav className="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
             <h1 className='logo'>ShopLink</h1>
-            <li>Almacen</li>
-            <li>Verduleria</li>
-            <li>Carniceria</li>
-            <li>Panaderia</li>
+            <ul className='categorias'>
+                <li>Almacen</li>
+                <li>Verduleria</li>
+                <li>Carniceria</li>
+                <li>Panaderia</li>
+            </ul>
             <CartWidget />
         </nav>
     )

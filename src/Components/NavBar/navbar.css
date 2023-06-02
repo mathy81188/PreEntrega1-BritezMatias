@@ -22,12 +22,21 @@
 }
 
 
-
+.categorias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    color:rgb(214, 229, 214);
+    padding-left: 0%;
+}
 li {
     display: inline;
-    padding-left: 20px;
-    padding-right: 30px;
-    text-align: end;
     color:rgb(214, 229, 214);
     cursor: pointer;
-}
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+
+} 

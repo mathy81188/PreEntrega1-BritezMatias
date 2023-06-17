@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "articulo": "Madonna",
+    "precio": 2000,
+    "img": "./img/Madonna.jpg",
+    "category":"80"
+  },
+  {
+    "id": 2,
+    "articulo": "Like a Virgin",
+    "precio": 2500,
+    "img": "./img/likeavirgin.jpg"
+  },
+  {
+    "id": 3,
+    "articulo": "True Blue",
+    "precio": 4000,
+    "img": "./img/trueblue.jpg",
+    "category":"80"
+  },
+  {
+    "id": 4,
+    "articulo": "Like a Payer",
+    "precio": 3500,
+    "img": "./img/likeaprayer.jpg",
+    "category":"80"
+  },
+  {
+    "id": 5,
+    "articulo": "Erotica",
+    "precio": 2000,
+    "img": "./img/erotica.jpg",
+    "category":"90"
+  },
+  {
+    "id": 6,
+    "articulo": "Bedtime Stories",
+    "precio": 1500,
+    "img": "./img/bedtimestories.jpg",
+    "category":"90"
+  },
+  {
+    "id": 7,
+    "articulo": "Ray of Light",
+    "precio": 2000,
+    "img": "./img/rayoflight.jpg",
+    "category":"90"
+  },
+  {
+    "id": 8,
+    "articulo": "Music",
+    "precio": 2500,
+    "img": "./img/music.jpg",
+    "category":"00"
+  },
+  {
+    "id": 9,
+    "articulo": "American Life",
+    "precio": 2000,
+    "img": "./img/americanlife.jpg",
+    "category":"00"
+  },
+  {
+    "id": 10,
+    "articulo": "Confessions on a Dance Floor",
+    "precio": 4000,
+    "img": "./img/confessions.jpg",
+    "category":"00"
+  },
+  {
+    "id": 11,
+    "articulo": "Hard Candy",
+    "precio": 2500,
+    "img": "./img/hardcandy.jpg",
+    "category":"00"
+  },
+  {
+    "id": 12,
+    "articulo": "MDNA",
+    "precio": 2500,
+    "img": "./img/mdna.jpg",
+    "category":"10"
+  },
+  {
+    "id": 13,
+    "articulo": "Rebel Heart",
+    "precio": 2500,
+    "img": "./img/rebelheart.jpg",
+    "category":"10"
+  },
+  {
+    "id": 14,
+    "articulo": "Madame X",
+    "precio": 1500,
+    "img": "./img/madamex.jpg",
+    "category":"10"
+  }
+]

@@ -1,7 +1,11 @@
-.greeting{
+.Card-List{
     display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 10vh;
-    font-size: xx-large;
+    width: 100%;
+    height: 100;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+
 }

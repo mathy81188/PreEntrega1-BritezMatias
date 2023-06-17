@@ -10,15 +10,15 @@
 } 
 
 .logo {
-    height: 60px;
+
     font-size: 50px;
     color: rgb(2, 255, 90);
     font-style: oblique;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
     text-align: center;
-    padding-top: 2px;
     padding-left: 10px;
+    text-decoration: none;
 }
 
 
@@ -30,13 +30,14 @@
     color:rgb(214, 229, 214);
     padding-left: 0%;
 }
-li {
+.li {
     display: inline;
     color:rgb(214, 229, 214);
     cursor: pointer;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
+    text-decoration: none;
     
 
 } 

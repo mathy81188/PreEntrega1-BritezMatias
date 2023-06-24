@@ -1,51 +1,28 @@
 import React, { useState, useEffect } from "react";
-import "./ItemListContainer.css";
-
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
-
-import { Link } from "react-router-dom";
-
 import axios from "axios";
+import { useParams } from "react-router-dom";
+import "./ItemListContainer.css";
+import ItemList from "../ItemList/ItemList";
 
 const ItemListContainer = () => {
   const [prods, setProds] = useState([]);
 
+  const { id } = useParams();
+
   useEffect(() => {
-    axios("../../../data/data.json").then((json) => setProds(json.data));
-  }, []);
+    axios(`https://rickandmortyapi.com/api/character`).then((json) => {
+      if (id) {
+        setProds(json.data.results.filter((item) => item.species === id));
+      } else {
+        setProds(json.data.results);
+      }
+    });
+  }, [id]);
 
   return (
-    <div className="Card-List">
-      {prods.map((prod) => {
-        return (
-          <div key={prod.id}>
-            <Link to={`item/${prod.id}`}>
-              <Card sx={{ maxWidth: 345 }} prod={prod}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="400"
-                    image={prod.img}
-                    alt="green iguana"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      {prod.articulo}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {prod.precio}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Link>
-          </div>
-        );
-      })}
+    <div>
+      <h1>ItemListContainer</h1>
+      <ItemList prods={prods} />
     </div>
   );
 };

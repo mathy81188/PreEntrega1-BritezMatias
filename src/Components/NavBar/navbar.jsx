@@ -15,18 +15,20 @@ const Navbar = () => {
         ShopLink
       </Link>
       <ul className="categorias">
-        <Link className="li" to="category/80">
+        <Link className="li" to="category/Human">
           Almacen
         </Link>
-        <Link className="li" to="/category/90 ">
+        <Link className="li" to="/category/Alien ">
           Verduleria
         </Link>
-        <Link className="li" to="/category/00 ">
+        {/*   
+        <Link className="li" to="/category/Carniceria ">
           Carniceria
-        </Link>
-        <Link className="li" to="/category/10 ">
+        </Link>       
+         <Link  className="li" to="/category/Panaderia ">
           Panaderia
-        </Link>
+        </Link> 
+        */}
       </ul>
       <CartWidget />
     </nav>

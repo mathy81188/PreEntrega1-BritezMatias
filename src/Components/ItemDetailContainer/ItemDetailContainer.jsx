@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-
 import axios from "axios";
-import ItemListContainer from "../../Components/ItemListContainer/ItemListContainer";
+import { useParams } from "react-router-dom";
+import ItemDetail from "../../Components/ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-  const [prod, setProd] = useState({});
+  const [prodUn, setProdUn] = useState({});
 
   let { id } = useParams();
 
   useEffect(() => {
-    axios(`../../../data/data.json/${id}`).then((json) => setProd(json.data));
+    axios(`https://rickandmortyapi.com/api/character/${id}`).then((json) =>
+      setProdUn(json.data)
+    );
   }, [id]);
 
   return (
     <div>
-      <h1>detail</h1>
-      {prod.id ? <ItemListContainer prod={prod} /> : null}
+      <h1>ItemDetailContainer</h1>
+      <ItemDetail prodUn={prodUn} />
     </div>
   );
 };

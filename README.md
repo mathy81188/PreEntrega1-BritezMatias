@@ -1,17 +1,41 @@
-Proyecto E-Commerce
-
-\*comando Vite = npm run dev
-
-\*Librerias = Boostrap, Mui
+# Proyecto SuperLick para curso de React Js
 
 ---
 
--Primera entrega
+E-commerce en desarrolo para negocio gastronomico con filtros por categoria de productos e informacion especifica de cada uno.
+(APIRest temporal)
+Continua en desarrollo.
 
-Navbar, ItemListContarner, CartWidget
+---
 
--Sugunda Entrega
+## Instalacion
 
-navegabilidad en desarrollo
+---
 
-axios, react-router-dom
+Frame Utilizado VITEJS
+
+```
+npm create vite@latest
+
+Lanzamiento
+npm run dev
+
+---
+
+## Dependencias
+
+"axios": "^1.4.0"
+"react-router-dom": "^6.13.0"
+
+---
+
+## Librerias
+
+```
+
+"@mui/material": "^5.13.5"
+"bootstrap": "^5.3.0"
+
+```
+
+```

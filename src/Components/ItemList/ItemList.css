@@ -1,0 +1,17 @@
+.Card-List{
+    margin: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    height: 100;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+
+}
+
+.Card-Prod{
+    margin: 10px;
+}

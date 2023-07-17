@@ -15,22 +15,22 @@ const Navbar = () => {
         ShopLink
       </Link>
       <ul className="categorias">
-        <Link className="li" to="category/Human">
+        <Link className="li" to="/category/almacen">
           Almacen
         </Link>
-        <Link className="li" to="/category/Alien ">
+        <Link className="li" to="/category/verduleria">
           Verduleria
         </Link>
-        {/*   
-        <Link className="li" to="/category/Carniceria ">
+        <Link className="li" to="/category/carniceria">
           Carniceria
-        </Link>       
-         <Link  className="li" to="/category/Panaderia ">
-          Panaderia
-        </Link> 
-        */}
+        </Link>
+        <Link className="li" to="/category/fruteria">
+          Fruteria
+        </Link>
       </ul>
-      <CartWidget />
+      <Link to="/cart">
+        <CartWidget />
+      </Link>
     </nav>
   );
 };

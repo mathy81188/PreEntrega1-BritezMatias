@@ -1,22 +1,20 @@
-import { useState } from "react";
 import "./ItemCount.css";
 
-const ItemCount = () => {
-  const [counter, setCounter] = useState(0);
+import { Link } from "react-router-dom";
 
-  const [counterUp] = () => {
-    setCounter(counter + 1);
-  };
-  const [counterDown] = () => {
-    setCounter(counter - 1);
-  };
-
+const ItemCount = ({ counter, counterUp, counterDown, handleAdd }) => {
   return (
     <div>
-      <p> counter :{counter}</p>
-
-      <button onClick={counterUp}>Incrementar</button>
-      <button onClick={counterDown}> Decrementar</button>
+      <div>
+        <span onClick={counterDown}>-</span>
+      </div>
+      <p>{counter}</p>
+      <div>
+        <span onClick={counterUp}>+</span>
+      </div>
+      <Link to="/cart">
+        <h1 onClick={handleAdd}>Añadir</h1>
+      </Link>
     </div>
   );
 };

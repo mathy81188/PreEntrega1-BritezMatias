@@ -1,3 +1,4 @@
+//Es un agrupador de un set de componentes Item.js (Deberías incluirlo dentro de ItemListContainer de la primera pre-entrega del Proyecto Final)
 import React from "react";
 import { Link } from "react-router-dom";
 import "../ItemList/ItemList.css";

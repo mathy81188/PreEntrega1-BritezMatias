@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { db } from "../../firebase/firebaseConfig";
+import { collection, query, where, getDocs } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import "./ItemListContainer.css";
 import ItemList from "../ItemList/ItemList";
@@ -10,13 +11,21 @@ const ItemListContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios(`https://rickandmortyapi.com/api/character`).then((json) => {
-      if (id) {
-        setProds(json.data.results.filter((item) => item.species === id));
-      } else {
-        setProds(json.data.results);
-      }
-    });
+    const collectionRef = id
+      ? query(collection(db, "productos"), where("category", "==", id))
+      : collection(db, "productos");
+
+    getDocs(collectionRef)
+      .then((response) => {
+        const prodsAdapted = response.docs.map((doc) => {
+          const data = doc.data();
+          return { id: doc.id, ...data };
+        });
+        setProds(prodsAdapted);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, [id]);
 
   return (

@@ -1,0 +1,67 @@
+import { createContext, useState } from "react";
+
+export const CartContext = createContext();
+
+const CartContextProvider = ({ children }) => {
+  const [cartList, setCartList] = useState([]);
+  const isInCart = (id) =>
+    cartList.find((product) => product.id === id) ? true : false;
+
+  const addToCart = (item, quantity) => {
+    if (isInCart(item.id)) {
+      setCartList(
+        cartList.map((product) => {
+          return product.id === item.id
+            ? { ...product, quantity: product.quantity + quantity }
+            : product;
+        })
+      );
+    } else {
+      setCartList([...cartList, { ...item, quantity }]);
+    }
+  };
+
+  const getQuantity = () => {
+    let cant = 0;
+    cartList.forEach((e) => (cant += e.quantity));
+    return cant;
+  };
+
+  const getPrice = () => {
+    return cartList.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  };
+
+  const removeList = () => {
+    setCartList([]);
+  };
+
+  const deleteItem = (id) => {
+    //implementa la funcionalidad para borrar un producto del carrito
+    const deletedItem = cartList.filter((item) => item.id !== id);
+    // y le actualizas el estado con esa variable haciendo spread.
+    setCartList([...deletedItem]);
+    // de esta forma, se eliminaron los productos donde sí coincide el id.
+  };
+
+  //  let encontrarId = carrito.find((element) => element.id === id)
+  //  carrito = carrito.filter((carritoId) => {
+  //   return carritoId !== encontrarId
+
+  // })
+  return (
+    <CartContext.Provider
+      value={{
+        cartList,
+        setCartList,
+        addToCart,
+        removeList,
+        deleteItem,
+        getQuantity,
+        getPrice,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
+export default CartContextProvider;

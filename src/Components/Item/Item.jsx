@@ -11,13 +11,13 @@ const Item = ({ prod }) => {
     <div>
       <Card sx={{ maxWidth: 200 }}>
         <CardActionArea>
-          <CardMedia component="img" image={prod.image} alt="green iguana" />
+          <CardMedia component="img" image={prod.img} alt="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {prod.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {prod.species}
+              {`$${prod.price}`}
             </Typography>
           </CardContent>
         </CardActionArea>

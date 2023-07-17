@@ -24,6 +24,8 @@ npm run dev
 
 ## Dependencias
 
+---
+
 "axios": "^1.4.0"
 "react-router-dom": "^6.13.0"
 
@@ -31,10 +33,13 @@ npm run dev
 
 ## Librerias
 
-```
+---
 
 "@mui/material": "^5.13.5"
-"bootstrap": "^5.3.0"
+rect-hook-form
+sweetalert
+
+```
 
 ```
 

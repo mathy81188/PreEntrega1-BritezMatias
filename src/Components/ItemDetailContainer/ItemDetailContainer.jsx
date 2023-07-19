@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../Components/ItemDetail/ItemDetail";
 import { doc, getDoc } from "firebase/firestore";
+import "./ItemDetailContainer.css";
 
 const ItemDetailContainer = () => {
   const [prodUn, setProdUn] = useState({});
@@ -26,8 +27,7 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <div>
-      <h1>ItemDetailContainer</h1>
+    <div className="container-idc">
       <ItemDetail prodUn={prodUn} id={id} />
     </div>
   );

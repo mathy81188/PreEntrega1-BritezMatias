@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 const ItemCount = ({ counter, counterUp, counterDown, handleAdd }) => {
   return (
-    <div>
+    <div className="container-ic">
       <div>
         <span onClick={counterDown}>-</span>
       </div>
-      <p>{counter}</p>
+      <span>{counter}</span>
       <div>
         <span onClick={counterUp}>+</span>
       </div>
-      <Link to="/cart">
-        <h1 onClick={handleAdd}>Añadir</h1>
+      <Link className="button-add " to="/cart">
+        <span onClick={handleAdd}>Añadir</span>
       </Link>
     </div>
   );

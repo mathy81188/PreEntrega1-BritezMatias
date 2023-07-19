@@ -1,8 +1,8 @@
-.CartWidget{
-    display: flex;
-    font-size: 25px;
-    padding-right: 15px;
-    letter-spacing: 2px;
-    font-style: normal;
-    color: white;
+.CartWidget {
+  display: flex;
+  font-size: 1000px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+  height: 60px;
+  width: 60px;
 }

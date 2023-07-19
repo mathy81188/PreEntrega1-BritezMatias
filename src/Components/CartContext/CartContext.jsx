@@ -36,18 +36,10 @@ const CartContextProvider = ({ children }) => {
   };
 
   const deleteItem = (id) => {
-    //implementa la funcionalidad para borrar un producto del carrito
     const deletedItem = cartList.filter((item) => item.id !== id);
-    // y le actualizas el estado con esa variable haciendo spread.
     setCartList([...deletedItem]);
-    // de esta forma, se eliminaron los productos donde sí coincide el id.
   };
 
-  //  let encontrarId = carrito.find((element) => element.id === id)
-  //  carrito = carrito.filter((carritoId) => {
-  //   return carritoId !== encontrarId
-
-  // })
   return (
     <CartContext.Provider
       value={{

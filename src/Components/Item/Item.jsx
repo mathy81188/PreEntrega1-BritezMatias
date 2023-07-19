@@ -1,15 +1,17 @@
-//Es un componente destinado a mostrar información breve del producto que el user clickeará luego para acceder a los detalles
 import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import "./Item.css";
+import {
+  CardActionArea,
+  Typography,
+  CardMedia,
+  CardContent,
+  Card,
+} from "@mui/material";
 
 const Item = ({ prod }) => {
   return (
     <div>
-      <Card sx={{ maxWidth: 200 }}>
+      <Card className="Card-Prod" sx={{ maxWidth: 300 }}>
         <CardActionArea>
           <CardMedia component="img" image={prod.img} alt="green iguana" />
           <CardContent>

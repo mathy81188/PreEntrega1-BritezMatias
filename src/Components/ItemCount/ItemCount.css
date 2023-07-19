@@ -1,0 +1,17 @@
+.container-ic {
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+  font-weight: 500;
+  align-items: center;
+}
+.button-add {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+}

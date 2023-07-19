@@ -1,10 +1,7 @@
-.container-il {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: space-between;
+.container-item {
+  width: auto;
   text-decoration: none;
+  font-size: 500px;
 }
 
 .Card-Prod {
@@ -13,7 +10,5 @@
   justify-content: space-around;
   justify-items: center;
   align-items: center;
-}
-.link {
   text-decoration: none;
 }

@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import "./ItemDetail.css";
 import { CartContext } from "../CartContext/CartContext";
 import {
   CardActionArea,

@@ -1,0 +1,6 @@
+.container-idc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}

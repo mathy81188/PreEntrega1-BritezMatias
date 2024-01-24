@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../../firebase/firebaseConfig";
 import Swal from "sweetalert2";
-
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../Components/ItemDetail/ItemDetail";
 import { doc, getDoc } from "firebase/firestore";

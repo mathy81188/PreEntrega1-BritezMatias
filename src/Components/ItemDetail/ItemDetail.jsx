@@ -28,35 +28,6 @@ const ItemDetail = ({ prodUn, id }) => {
     e.preventDefault();
   };
 
-  //   return (
-  //     <div className="Card-Prod">
-  //       <Card sx={{ maxWidth: 400 }}>
-  //         <CardActionArea>
-  //           <CardMedia component="img" image={prodUn.img} alt="green iguana" />
-  //           <CardContent>
-  //             <Typography gutterBottom variant="h5" component="div">
-  //               {prodUn.name}
-  //             </Typography>
-  //             <Typography variant="body2" color="text.secondary">
-  //               {`Precio Un. $${prodUn.price}`}
-  //             </Typography>
-  //             <Typography variant="body2" color="text.secondary">
-  //               {prodUn.origin}
-  //             </Typography>
-  //             <ItemCount
-  //               prodUn={prodUn}
-  //               counter={counter}
-  //               counterUp={counterUp}
-  //               counterDown={counterDown}
-  //               handleAdd={handleAdd}
-  //             />
-  //           </CardContent>
-  //         </CardActionArea>
-  //       </Card>
-  //     </div>
-  //   );
-  // };
-
   return (
     <div className="Card-Prod">
       <Card sx={{ display: "flex", maxWidth: 1000 }}>

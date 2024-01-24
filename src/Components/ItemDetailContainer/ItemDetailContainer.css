@@ -1,4 +1,6 @@
 .container-idc {
+  height: 100vh; /* Cambiado a una unidad de altura relativa */
+  width: 100%; /* Ajusta según tus necesidades */
   display: flex;
   justify-content: space-around;
   align-items: center;

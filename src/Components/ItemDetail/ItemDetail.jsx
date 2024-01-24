@@ -28,33 +28,72 @@ const ItemDetail = ({ prodUn, id }) => {
     e.preventDefault();
   };
 
+  //   return (
+  //     <div className="Card-Prod">
+  //       <Card sx={{ maxWidth: 400 }}>
+  //         <CardActionArea>
+  //           <CardMedia component="img" image={prodUn.img} alt="green iguana" />
+  //           <CardContent>
+  //             <Typography gutterBottom variant="h5" component="div">
+  //               {prodUn.name}
+  //             </Typography>
+  //             <Typography variant="body2" color="text.secondary">
+  //               {`Precio Un. $${prodUn.price}`}
+  //             </Typography>
+  //             <Typography variant="body2" color="text.secondary">
+  //               {prodUn.origin}
+  //             </Typography>
+  //             <ItemCount
+  //               prodUn={prodUn}
+  //               counter={counter}
+  //               counterUp={counterUp}
+  //               counterDown={counterDown}
+  //               handleAdd={handleAdd}
+  //             />
+  //           </CardContent>
+  //         </CardActionArea>
+  //       </Card>
+  //     </div>
+  //   );
+  // };
+
   return (
     <div className="Card-Prod">
-      <Card sx={{ maxWidth: 400 }}>
-        <CardActionArea>
-          <CardMedia component="img" image={prodUn.img} alt="green iguana" />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {prodUn.name}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {`Precio Un. $${prodUn.price}`}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {prodUn.origin}
-            </Typography>
-            <ItemCount
-              prodUn={prodUn}
-              counter={counter}
-              counterUp={counterUp}
-              counterDown={counterDown}
-              handleAdd={handleAdd}
-            />
-          </CardContent>
-        </CardActionArea>
+      <Card sx={{ display: "flex", maxWidth: 1000 }}>
+        <CardMedia
+          component="img"
+          image={prodUn.img}
+          alt="Product Image"
+          sx={{ width: 400, objectFit: "cover" }}
+        />
+        <CardContent
+          sx={{
+            flex: "1",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            paddingLeft: 2,
+          }}
+        >
+          <Typography gutterBottom variant="h5" component="div">
+            {prodUn.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {`Precio Un. $${prodUn.price}`}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {prodUn.origin}
+          </Typography>
+          <ItemCount
+            prodUn={prodUn}
+            counter={counter}
+            counterUp={counterUp}
+            counterDown={counterDown}
+            handleAdd={handleAdd}
+          />
+        </CardContent>
       </Card>
     </div>
   );
 };
-
 export default ItemDetail;

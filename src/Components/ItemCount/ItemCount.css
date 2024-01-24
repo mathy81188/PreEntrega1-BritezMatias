@@ -1,4 +1,4 @@
-.container-ic {
+/* .container-ic {
   display: flex;
   justify-content: space-around;
   font-size: x-large;
@@ -14,4 +14,39 @@
   text-decoration: none;
   display: inline-block;
   font-size: 17px;
+} */
+/* ItemCount.css */
+
+/* ItemCount.css */
+
+.container-ic {
+  height: 30vh;
+  display: flex;
+  flex-direction: column; /* Asegura una disposición horizontal */
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.counter-control,
+.counter-value {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.button-add {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px; /* Espacio entre los controles y el botón */
+}
+
+.button-add:hover {
+  background-color: #45a049;
 }

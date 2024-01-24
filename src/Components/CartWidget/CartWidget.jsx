@@ -8,7 +8,7 @@ import { CartContext } from "../CartContext/CartContext";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
-    right: -3,
+    right: 10,
     top: 23,
     border: `2px solid ${theme.palette.background.paper}`,
     padding: "0 7px",

@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -6,7 +6,7 @@
 .navbar {
   background-color: #333;
   overflow: hidden;
-  position: fixed;
+  position:fixed;
   display: block;
 }
 
@@ -48,4 +48,62 @@
 
 .logo:hover {
   color: red;
+} */
+/* navbar.css */
+
+/* Barra de Navegación */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Logo */
+.logo {
+  font-size: 3em;
+  color: rgb(2, 255, 90);
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-left: 10px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: red;
+}
+
+/* Categorías */
+.categorias {
+  float: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: rgb(207, 214, 207);
+  padding-left: 0%;
+}
+
+.li {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.li:hover {
+  color: black;
+  background-color: #ddd;
 }
